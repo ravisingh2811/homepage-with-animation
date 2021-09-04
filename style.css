@@ -1,0 +1,149 @@
+
+.home{
+    margin: 0;
+    padding: 0;
+    height: 828px;
+    background-color: #f5f5fc;
+    background-image:url(/media/paper-plane.png);
+    background-repeat: no-repeat;
+    background-position: bottom; 
+}
+.heading{
+    margin-top: 120px;
+    width: 54%;
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.heading h1{
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 59px;
+}
+.heading h4{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0000ff;
+}
+
+
+.heading input{
+    display: block;
+    width: 75%;
+    background-color: #ffffff;
+    border: none;
+    height: 65px;
+
+    padding-left: 25px;
+    border-radius: 70px;
+    padding-top: 5px;
+    outline: 0;
+    color: #212529;
+    -webkit-box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%) !important;
+    box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%) !important;
+}
+.heading input[type="email" i] {
+   
+    font-size: 20px;
+  
+}
+.search{
+    margin-top: 40px ;
+    display: flex;
+    flex-direction: row;
+
+}
+.heading button{
+    background-color: #0000ff;
+    position: absolute;
+    /* right: 624px; */
+    left: 469px;
+    /* top: 5px; */
+    color: #ffffff;
+
+    border: none;
+    margin-top: 2px;
+    height: 65px;
+    padding: 0 40px;
+    border-radius: 70px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.home_img{
+
+    width: 40%;
+    float: right;
+    padding-top: 63px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.rocket{
+    width: 40%;
+}
+
+.rocket img{
+    animation-name: slideUp;
+    animation-duration: 4s;
+
+}
+
+@keyframes slideUp{
+   
+     30%{
+
+        transform: translateY(1400px);
+     }
+  
+     
+     100% {
+        transform: translateY(0px);
+     }
+
+
+}
+
+.cloud{
+   
+    width: auto;
+    height: auto;
+   
+}
+.cloud img{
+    animation: moveBounce 3s linear infinite;
+    width: 100%;
+    margin-top: -203px;
+  
+}
+
+@keyframes moveBounce{
+    0% {
+    
+        transform: translateY(-20px);
+     }
+     60% {
+        opacity: 1;
+        transform: translateY(30px);
+     }
+     80% {
+        transform: translateY(-10px);
+     }
+     100% {
+        transform: translateY(0);
+     }
+
+}
